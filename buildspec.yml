@@ -4,7 +4,7 @@ phases:
   build:
     commands:
       - echo "Build started"
-      - cd /
+      - cd ECS-AWS\app\
       - pwd
       - docker build -t dd-ecr .
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 948082844272.dkr.ecr.ap-south-1.amazonaws.com
